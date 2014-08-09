@@ -1,0 +1,17 @@
+body { 
+
+  background: url(../images/meeting-iStock_small.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+#gradient-container{ background-color:#000000; width:100%; height:100%; opacity:0.5; position:fixed; margin:0px; padding:0px;top:0px; left:0px; z-index:-1000;}
+
+
+
+#headline{border-top:1px solid; border-bottom:1px solid;position: relative; top: 150px;width:75%; text-align:center;  margin:0 auto; font-family: 'Open Sans', sans-serif; font-size:24px; padding: 5px;  color:#ffffff; opacity:1;z-index:1000;}
+h1 {padding:15px}
+
+#sounds{position:relative; width:75%; margin:0 auto; top:150px; text-align:center;}
