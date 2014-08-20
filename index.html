@@ -21,17 +21,40 @@ music=document.getElementById(id);
 		music.pause();
 	}
 }
+$(document).ready(function() {
+    $(document).bind('keydown',function(e){
+       if(e.keyCode == 83) {playAudio('sad_trombone')}
+       if(e.keyCode == 67) {playAudio('crickets')}
+	   if(e.keyCode == 65) {playAudio('applaus')}
+	   if(e.keyCode == 84) {playAudio('thinking')}
+	   if(e.keyCode == 89) {playAudio('sympathy')}
+    });
+});
+
 </script>
 
 </head>
 <body>
+
 <div id="gradient-container"></div>
 <div id="headline"><p>Enhancing Meetings Since 2014<p></div>
 <div id="sounds">
 <audio controls id="sad_trombone" class="music"><source  src="sounds/sad_trombone.mp3" type="audio/mpeg"></audio>
-<button class="pButton play" onclick="playAudio('sad_trombone')"><i class="fa fa-play fa-4x"></i>Sad Trombone</button>
+<button class="pButton play" onClick="playAudio('sad_trombone')"><i class="fa fa-play fa-4x"></i><i class="playKey">S</i>ad Trombone</button>
 <audio controls id="crickets" class="music"><source  src="sounds/crickets.mp3" type="audio/mpeg"></audio>
-<button class="pButton play" onclick="playAudio('crickets')"><i class="fa fa-play fa-4x"></i>Crickets</button>
+<button class="pButton play" onClick="playAudio('crickets')"><i class="fa fa-play fa-4x"></i><i class="playKey">C</i>rickets</button>
+
+<audio controls id="applaus" class="music"><source  src="sounds/applaus.mp3" type="audio/mpeg"></audio>
+<button class="pButton play" onClick="playAudio('applaus')"><i class="fa fa-play fa-4x"></i><i class="playKey">A</i>pplaus</button>
+
+<audio controls id="thinking" class="music"><source  src="sounds/thinking.mp3" type="audio/mpeg"></audio>
+<button class="pButton play" onClick="playAudio('thinking')"><i class="fa fa-play fa-4x"></i><i class="playKey">T</i>hinking</button>
+
+<audio controls id="sympathy" class="music"><source  src="sounds/sympathy.mp3" type="audio/mpeg"></audio>
+<button class="pButton play" onClick="playAudio('sympathy')"><i class="fa fa-play fa-4x"></i>S<i class="playKey">y</i>mpathy</i></button>
+
+
+
 </div>
 </body>
 </html>
