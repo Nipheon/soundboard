@@ -3,57 +3,46 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<title></title>
-	
-<script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
-<script src="//code.jquery.com/color/jquery.color.plus-names-2.1.2.js"></script>
-<script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Khand' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-<title>Untitled Document</title>
-<script>
-function playAudio(id) {
-music=document.getElementById(id);
-	if (music.paused) {
-		music.play();
-	} else { 
-		music.pause();
-	}
-}
-$(document).ready(function() {
-    $(document).bind('keydown',function(e){
-       if(e.keyCode == 83) {playAudio('sad_trombone')}
-       if(e.keyCode == 67) {playAudio('crickets')}
-	   if(e.keyCode == 65) {playAudio('applaus')}
-	   if(e.keyCode == 84) {playAudio('thinking')}
-	   if(e.keyCode == 89) {playAudio('sympathy')}
-    });
-});
 
-</script>
+	<script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>')</script>
+	<script src="//code.createjs.com/soundjs-0.5.2.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/soundjs-0.5.2.min.js"><\/script>')</script>
+	<script src="js/soundboard.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Khand' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<title>Untitled Document</title>
 
 </head>
 <body>
 
 <div id="gradient-container"></div>
-<div id="headline"><p>Enhancing Meetings Since 2014<p></div>
+<div id="headline"><p>Enhancing Meetings Since 2014
+
+	<p></div>
 <div id="sounds">
-<audio controls id="sad_trombone" class="music"><source  src="sounds/sad_trombone.mp3" type="audio/mpeg"></audio>
-<button class="pButton play" onClick="playAudio('sad_trombone')"><i class="fa fa-play fa-4x"></i><i class="playKey">S</i>ad Trombone</button>
-<audio controls id="crickets" class="music"><source  src="sounds/crickets.mp3" type="audio/mpeg"></audio>
-<button class="pButton play" onClick="playAudio('crickets')"><i class="fa fa-play fa-4x"></i><i class="playKey">C</i>rickets</button>
 
-<audio controls id="applaus" class="music"><source  src="sounds/applaus.mp3" type="audio/mpeg"></audio>
-<button class="pButton play" onClick="playAudio('applaus')"><i class="fa fa-play fa-4x"></i><i class="playKey">A</i>pplaus</button>
+	<button class="pButton play" data-sound="sad_trombone" data-key="q">
+	<i class="fa fa-play fa-4x"></i>Sad Trombone
+	</button>
 
-<audio controls id="thinking" class="music"><source  src="sounds/thinking.mp3" type="audio/mpeg"></audio>
-<button class="pButton play" onClick="playAudio('thinking')"><i class="fa fa-play fa-4x"></i><i class="playKey">T</i>hinking</button>
+	<button class="pButton play" data-sound="crickets" data-key="w">
+	<i class="fa fa-play fa-4x"></i>Crickets
+	</button>
 
-<audio controls id="sympathy" class="music"><source  src="sounds/sympathy.mp3" type="audio/mpeg"></audio>
-<button class="pButton play" onClick="playAudio('sympathy')"><i class="fa fa-play fa-4x"></i>S<i class="playKey">y</i>mpathy</i></button>
+	<button class="pButton play" data-sound="applaus" data-key="a">
+	<i class="fa fa-play fa-4x"></i>Applause
+	</button>
 
+	<button class="pButton play" data-sound="thinking" data-key="s">
+	<i class="fa fa-play fa-4x"></i>Thinking
+	</button>
 
+	<button class="pButton play" data-sound="sympathy" data-key="y">
+	<i class="fa fa-play fa-4x"></i>Sympathy
+	</button>
 
 </div>
 </body>
