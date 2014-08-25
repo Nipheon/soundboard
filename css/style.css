@@ -39,3 +39,5 @@ body {
 }
 
 .playKey{ text-decoration:underline; font-style:normal}
+
+.playing {font-weight:bold;}
