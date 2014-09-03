@@ -1,24 +1,26 @@
 body { 
 
-  background: url(../images/meeting-iStock_small.jpg) no-repeat center center fixed; 
+  background:url(../images/Barack_Obama_with_his_staff_in_the_meeting_room_of_Air_Force_One.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   
 }
-#gradient-container{  background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 70%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */ width:100%; height:100%; opacity:0.5; position:fixed; margin:0px; padding:0px;top:0px; left:0px; z-index:-1000;}
+#gradient-container{  background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 70%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */ width:100%; height:100%; position:fixed; margin:0px; padding:0px;top:0px; left:0px; z-index:-1000;}
 
+i{padding-right:5px}
+.btn-primary {margin:10px!important}
 
-
-#headline{ background: none repeat scroll 0 0 #222;
+#headline{
     color: #fff;
-    font: 12px 'Yanone Kaffeesatz',Arial,Serif;
+    font: 24px 'Yanone Kaffeesatz',Arial,Serif;
     left: 0;
     position: absolute;
-    text-align: center;
+    text-align: left;
     top: 0;
-    width: 100%;}
+    width: 100%;
+	padding:20px;}
 
 #sounds{position:relative; width:75%; margin:0 auto; top:170px; text-align:center;}
 
